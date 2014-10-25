@@ -2,6 +2,9 @@ function generalAttack(attacker, receiver){
 	if(attacker.attack > receiver.defense){
 		receiver.health = receiver.health - (receiver.defence - attacker.attack);
 	}
+	else {
+		return;
+	}
 }
 function wolvesAttack() {
 var wolf = {
