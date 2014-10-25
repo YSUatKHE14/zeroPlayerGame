@@ -1,9 +1,9 @@
 //take variables from from
 function Character() {
-  this.name: "idkMyBFFGil",
-  this.health: 100,
-  this.attack: 10,
-  this.defense: 10
+  this.name: "idkMyBFFGil";
+  this.health: 100;
+  this.attack: 10;
+  this.defense: 10;
 }
 var hero = new Character();
 
