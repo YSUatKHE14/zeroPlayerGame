@@ -1,6 +1,6 @@
 A Zero Player Game
 ==============
-This is a zero player game made by the YSU team at Kent Hack Enough 2014. Because the YSU team had more than 4 people in it we didn't qualify for any prizes, but I think I lot of people learned a bunch and had a time time anyway.
+This is a zero player game made by the YSU team at Kent Hack Enough 2014. Because the YSU team had more than 4 people in it we didn't qualify for any prizes, but I think a lot of people learned a bunch and had a great time anyway.
 
 Thanks so much for the KHE team for having us!
 
