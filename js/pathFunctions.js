@@ -31,11 +31,11 @@ var wolf = new Character();
 }
 
 function banditsAttack() {
-	var bandit = new Character();
+var bandit = new Character();
 		bandit.health = 40;
 		bandit.attack = 10;
 		bandit.defense = 5;
-	while(wolf.health > 0 && hero.health > 0)
+	while(bandit.health > 0 && hero.health > 0)
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 30){
