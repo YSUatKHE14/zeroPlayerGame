@@ -61,7 +61,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+    background-image: url('http://subtlepatterns.com/patterns/footer_lodyas.png');
+}
 
+.path{
+    height: 500px;
+    background-color: white;
+}
 
 
 
