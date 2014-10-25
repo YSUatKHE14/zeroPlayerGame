@@ -1,4 +1,6 @@
-#First ideas
+~First Level~
+
+{Mobs}
 
 Wolves (Lower Attack and Defense) Beginning enemy.
 
@@ -8,20 +10,26 @@ Troll (Higher Level Wolf) Double wolves stats but still balanced "EX: Wolf is AT
 
 Golem (Higher Defense compared to attack) Make him like a tank.
 
-Green Dragon (Higher attack than Defense)
+Green Dragon (Tier 1 Dragon) (Higher attack than Defense)
 
-Black squirrel with no tail (Be Difficult to a point.)
+*BOSS* Black Squirrel Without a tail (Be Difficult to a point.)
 
-#Second round
+{Mob Events}
 
-Warg Supa wolf
+~Second Level~
 
-Mercs Supa bandits 
+{Mobs}
 
-Troll Warlord lvl 2 troll
+Warg (Upgraded Wolf)
 
-Behemoth supa golmn 
+Soldier 
 
-Red dargon
+Troll (Level 2 Troll)
 
-Darude #getrowdy
+Behemoths (Upgraded Golems)
+
+Red Dragon (Tier 2 Dragon)
+
+*BOSS* TBA
+
+{Mob Events}
