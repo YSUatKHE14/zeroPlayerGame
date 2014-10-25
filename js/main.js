@@ -1,10 +1,11 @@
 //take variables from from
-var hero = {
-  name: "Hero",
-  health: 100,
-  attack: 10,
-  defense: 10
+function Character() {
+  this.name: "idkMyBFFGil",
+  this.health: 100,
+  this.attack: 10,
+  this.defense: 10
 }
+var hero = new Character();
 
 //initialize character
 function initialize_character() {
