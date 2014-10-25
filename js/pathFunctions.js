@@ -50,8 +50,8 @@ function banditsAttack() {
 			console.log("hero has attacked");
 			console.log(bandit.health);
 		}
+	}
 }
-
 function trollsAttack() {
 
 }
