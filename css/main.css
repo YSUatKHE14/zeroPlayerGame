@@ -88,7 +88,9 @@ body{
 }
 
 
-
+.gameplay {
+    display: none;
+}
 
 
 

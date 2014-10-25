@@ -20,18 +20,18 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+
         <div class="pure-g">
             <div class="pure-u-2-24">
             </div>
-            <div class="pure-u-20-24 wrapper"> 
-                <div class="initialForm">
-                    <form class="pure-form pure-form-aligned heroNameForm" name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post" required>
+            <div class="pure-u-20-24 wrapper">
+                <div id="initialForm" class="initialForm">
+                    <form class="pure-form pure-form-aligned heroNameForm" name="myForm">
                         <div class="pure-control-group">
                             <input type="text" placeholder="Hero name" name="fname">
                         </div>
                         <div class="pure-control-group">
-    						<input type=range min=0 max=10 value=5 id=stats step=1 onchange="outputUpdate(value)">
+    						<input type=range min=0 max=10 value=5 id="stats" step=1 onchange="outputUpdate(value)">
 				        </div>
                         <div class="pure-control-group">
 
@@ -42,16 +42,16 @@
     							}
     						</script>
 
-                            <output id="Defense">5</output>-Defence | 
+                            <output id="Defense">5</output>-Defence |
     						Attack-<output id="Attack">5</output>
     				    </div>
                         <div class="pure-control-group">
-                            <input type="submit" class="pure-button pure-button-primary" value="Submit">
+                            <input type="button" class="pure-button pure-button-primary" value="Submit" onclick="return run();">
                         </div>
                     </form>
                 </div>
-                <div class="gameplay">
-                    <div class="stats">
+                <div id="gameplay" class="gameplay">
+                    <div id="status" class="stats">
                     </div>
                     <div class="path">
                     </div>
@@ -61,8 +61,5 @@
         </div>
 		<script src="js/pathFunctions.js"></script>
         <script src="js/main.js"></script>
-		<script>
-			gameplay();
-		</script>
     </body>
 </html>
