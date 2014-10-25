@@ -7,11 +7,11 @@ function generalAttack(attacker, receiver){
 	}
 }
 function wolvesAttack() {
-var wolf = {
-		health: 30,
-		attack: 5,
-		defense: 5
-	}
+var wolf = new Character();
+		wolf.health = 30;
+		wolf.attack = 5;
+		wolf.defense = 5;
+
 	while(wolf.health > 0 && hero.health > 0)
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
@@ -29,22 +29,22 @@ var wolf = {
 }
 
 function banditsAttack() {
-	
+
 }
 
 function trollsAttack() {
-	
+
 }
 
 function golemsAttack() {
-	
+
 }
 
 function dragonAttacks() {
 // atk 30
-// 
+//
 }
 
 function blackSquirrelAttacks() {
-	
+
 }
