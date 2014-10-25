@@ -21,7 +21,7 @@ var wolf = {
 		}
 		else {
 			generalAttack(hero, wolf);
-			console.log("hero ahs attacked");
+			console.log("hero has attacked");
 		}
 	}
 }
