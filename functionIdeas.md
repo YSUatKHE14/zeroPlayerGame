@@ -1,11 +1,11 @@
-Wolves lower Atk and Def
+Wolves (Lower Attack and Defense) Beginning enemy.
 
-Bandits have a higher Atk than Def keep it fair
+Bandits (Higher Attack Than Defense) Slight increase in difficulty.
 
-Troll a higher level wolf like balanced
+Troll (Higher Level Wolf) Double wolves stats but still balanced "EX: Wolf is 1-1 make troll 4-4"
 
-Golm is Higher Def than attack make him tanky
+Golem (Higher Defense compared to attack) Make him like a tank.
 
-Dragon is a Higher attack than defense
+Dragon (Higher attack than Defense)
 
-Badass Tail less Black squirell make them tough
+Black squirrel with no tail (Be Difficult to a point.)
