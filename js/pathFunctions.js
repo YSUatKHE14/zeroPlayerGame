@@ -53,7 +53,26 @@ var bandit = new Character();
 	}
 }
 function trollsAttack() {
-
+var troll = new Character();
+		troll.health = 40;
+		troll.attack = 10;
+		troll.defense = 5;
+	while(troll.health > 0 && hero.health > 0)
+	{
+		var chance = Math.floor((Math.random() * 100) + 1);
+		if(chance < 30){
+			console.log(hero.health);
+			generalAttack(troll, hero);
+			console.log("troll has attacked");
+			console.log(hero.health);
+		}
+		else {
+			console.log(troll.health);
+			generalAttack(hero, troll);
+			console.log("hero has attacked");
+			console.log(troll.health);
+		}
+	}
 }
 
 function golemsAttack() {
