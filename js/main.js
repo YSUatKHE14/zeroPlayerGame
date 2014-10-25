@@ -22,6 +22,7 @@ function switch_to_gameplay() {
 
 function update_status() {
   document.getElementById("status_health").innerHTML = hero.health;
+  document.getElementById("path").scrollTop = document.getElementById("path").scrollHeight;
 }
 
 function gameplay() {
