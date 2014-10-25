@@ -3,7 +3,7 @@ function generalAttack(attacker, receiver){
 		receiver.health = receiver.health - (attacker.attack - receiver.defense);
 	}
 	else {
-		return;
+		 receiver.health -= 2;
 	}
 }
 function wolvesAttack() {
