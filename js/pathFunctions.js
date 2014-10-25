@@ -1,6 +1,6 @@
 function generalAttack(attacker, receiver){
 	if(attacker.attack > receiver.defense){
-		receiver.health = receiver.health - (receiver.defence - attacker.attack);
+		receiver.health = receiver.health - (receiver.defense - attacker.attack);
 	}
 	else {
 		return;
@@ -22,8 +22,10 @@ var wolf = new Character();
 			console.log(hero.health);
 		}
 		else {
+			console.log(wolf.health);
 			generalAttack(hero, wolf);
 			console.log("hero has attacked");
+			console.log(wolf.health);
 		}
 	}
 }
