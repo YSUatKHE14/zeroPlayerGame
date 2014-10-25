@@ -16,16 +16,16 @@ var wolf = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 20){
-			document.getElementById("path").innerHTML += "<br />" + hero.health;
+			print_to_path(hero.health);
 			generalAttack(wolf, hero);
-			document.getElementById("path").innerHTML += "<br />wolf has attacked";
-			document.getElementById("path").innerHTML += "<br />" + hero.health;
+			print_to_path("wolf has attacked");
+			print_to_path(hero.health);
 		}
 		else {
-			document.getElementById("path").innerHTML += "<br />" + wolf.health;
+			print_to_path(wolf.health);
 			generalAttack(hero, wolf);
-			document.getElementById("path").innerHTML += "<br />hero has attacked";
-			document.getElementById("path").innerHTML += "<br />" + wolf.health;
+			print_to_path("hero has attacked");
+			print_to_path(wolf.health);
 		}
 		update_status();
 	}
@@ -40,16 +40,16 @@ var bandit = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 30){
-			document.getElementById("path").innerHTML += "<br />" + hero.health;
+			print_to_path(hero.health);
 			generalAttack(bandit, hero);
-			document.getElementById("path").innerHTML += "<br />bandit has attacked";
-			document.getElementById("path").innerHTML += "<br />" + hero.health;
+			print_to_path("bandit has attacked");
+			print_to_path(hero.health);
 		}
 		else {
-			document.getElementById("path").innerHTML += "<br />" + bandit.health;
+			print_to_path(bandit.health);
 			generalAttack(hero, bandit);
-			document.getElementById("path").innerHTML += "<br />hero has attacked";
-			document.getElementById("path").innerHTML += "<br />" + bandit.health;
+			print_to_path("hero has attacked");
+			print_to_path(bandit.health);
 		}
 		update_status();
 	}
@@ -63,16 +63,16 @@ var troll = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 35){
-			document.getElementById("path").innerHTML += "<br />" + hero.health;
+			print_to_path(hero.health);
 			generalAttack(troll, hero);
-			document.getElementById("path").innerHTML += "<br />troll has attacked";
-			document.getElementById("path").innerHTML += "<br />" + hero.health;
+			print_to_path("troll has attacked");
+			print_to_path(hero.health);
 		}
 		else {
-			document.getElementById("path").innerHTML += "<br />" + troll.health;
+			print_to_path(troll.health);
 			generalAttack(hero, troll);
-			document.getElementById("path").innerHTML += "<br />hero has attacked";
-			document.getElementById("path").innerHTML += "<br />" + troll.health;
+			print_to_path("hero has attacked");
+			print_to_path(troll.health);
 		}
 		update_status();
 	}
@@ -86,17 +86,17 @@ var golem = new Character();
 	while(golem.health > 0 && hero.health > 0)
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
-		if(chance < 40){
-			document.getElementById("path").innerHTML += "<br />" + hero.health;
+		if(chance < 20){
+			print_to_path(hero.health);
 			generalAttack(golem, hero);
-			document.getElementById("path").innerHTML += "<br />golem has attacked";
-			document.getElementById("path").innerHTML += "<br />" + hero.health;
+			print_to_path("golem has attacked");
+			print_to_path(hero.health);
 		}
 		else {
-			document.getElementById("path").innerHTML += "<br />" + golem.health;
+			print_to_path(golem.health);
 			generalAttack(hero, golem);
-			document.getElementById("path").innerHTML += "<br />hero has attacked";
-			document.getElementById("path").innerHTML += "<br />" + golem.health;
+			print_to_path("hero has attacked");
+			print_to_path(golem.health);
 		}
 		update_status();
 	}
@@ -111,17 +111,17 @@ var dragon = new Character();
 	while(dragon.health > 0 && hero.health > 0)
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
-		if(chance < 50){
-			document.getElementById("path").innerHTML += "<br />" + hero.health;
+		if(chance < 20){
+			print_to_path(hero.health);
 			generalAttack(dragon, hero);
-			document.getElementById("path").innerHTML += "<br />dragon has attacked";
-			document.getElementById("path").innerHTML += "<br />" + hero.health;
+			print_to_path("dragon has attacked");
+			print_to_path(hero.health);
 		}
 		else {
-			document.getElementById("path").innerHTML += "<br />" + dragon.health;
+			print_to_path(dragon.health);
 			generalAttack(hero, dragon);
-			document.getElementById("path").innerHTML += "<br />hero has attacked";
-			document.getElementById("path").innerHTML += "<br />" + dragon.health;
+			print_to_path("hero has attacked");
+			print_to_path(dragon.health);
 		}
 		update_status();
 	}

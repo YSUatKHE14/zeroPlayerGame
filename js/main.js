@@ -22,6 +22,10 @@ function switch_to_gameplay() {
 
 function update_status() {
   document.getElementById("status_health").innerHTML = hero.health;
+}
+
+function print_to_path( stringToPrint ) {
+  document.getElementById("path").innerHTML += stringToPrint + "<br />";
   document.getElementById("path").scrollTop = document.getElementById("path").scrollHeight;
 }
 
@@ -40,3 +44,4 @@ function run () {
   switch_to_gameplay();
   gameplay();
 }
+
