@@ -73,6 +73,7 @@ body{
 .initialForm{
     width: 100%;
     padding-top: 10px;
+    padding-bottom: 20px;
     background-color: white;
 }
 
@@ -85,7 +86,6 @@ body{
 .wrapper{
     margin-top: 20px;
 }
-
 
 
 

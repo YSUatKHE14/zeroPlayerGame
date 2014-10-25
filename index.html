@@ -26,26 +26,28 @@
             </div>
             <div class="pure-u-20-24 wrapper"> 
                 <div class="initialForm">
-                    <form class="heroNameForm" name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post" required>
-                        <input type="text" placeholder="Hero name" name="fname">
-                        
-                                        
-						<input type=range min=0 max=10 value=5 id=stats step=1 onchange="outputUpdate(value)">
-				        <script>
-							function outputUpdate(att) {
-							  document.querySelector('#Attack').value = att;
-							}
-						</script>
-						<output id=Attack>5</output>
-						<script>
-							function outputUpdate(def) {
-							  document.querySelector('#Defense').value = 10 - def;
-							}
-						</script>
-						<output id=Defense>5</output>-Def
-				
-                        
-                        <input type="submit" class="pure-button pure-button-primary" value="Submit">
+                    <form class="pure-form pure-form-aligned heroNameForm" name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post" required>
+                        <div class="pure-control-group">
+                            <input type="text" placeholder="Hero name" name="fname">
+                        </div>
+                        <div class="pure-control-group">
+    						<input type=range min=0 max=10 value=5 id=stats step=1 onchange="outputUpdate(value)">
+				        </div>
+                        <div class="pure-control-group">
+
+                            <script>
+    							function outputUpdate(att) {
+    							  document.querySelector('#Attack').value = att;
+                                  document.querySelector('#Defense').value = (10 - att);
+    							}
+    						</script>
+
+                            Def-<output id="Defense">5</output>
+    						<output id="Attack">5</output>-Att
+    				    </div>
+                        <div class="pure-control-group">
+                            <input type="submit" class="pure-button pure-button-primary" value="Submit">
+                        </div>
                     </form>
                 </div>
                 <div class="gameplay">
