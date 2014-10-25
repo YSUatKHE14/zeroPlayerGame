@@ -16,8 +16,10 @@ var wolf = {
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 20){
+			console.log(hero.health);
 			generalAttack(wolf, hero);
 			console.log("wolf has attacked");
+			console.log(hero.health);
 		}
 		else {
 			generalAttack(hero, wolf);
