@@ -11,8 +11,8 @@ var hero = new Character();
 function initialize_character() {
   hero.name = document.getElementById('fname');
   hero.health = 100; // Starting health
-  hero.attack = 10; // document.getElementById("attack").value
-  hero.defense = 10; // document.getElementById("defense").value
+  hero.attack = document.getElementById('stats'); // document.getElementById("attack").value
+  hero.defense = 10 - document.getElementById('stats'); // document.getElementById("defense").value
 }
 
 function switch_to_gameplay() {
