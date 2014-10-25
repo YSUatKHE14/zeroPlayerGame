@@ -1,23 +1,23 @@
-function pathfunction1() {
+function wolvesAttack() {
 
 }
 
-function pathfunction2() {
+function banditsAttack() {
 	
 }
 
-function pathfunction3() {
+function trollsAttack() {
 	
 }
 
-function pathfunction4() {
+function golemsAttack() {
 	
 }
 
-function pathfunction5() {
+function dragonAttacks() {
 	
 }
 
-function finalBoss() {
+function blackSquirrelAttacks() {
 	
 }
