@@ -28,7 +28,7 @@ function gameplay() {
   wolvesAttack();
   banditsAttack();
   trollsAttack();
-  //pathFunction4();
+  dragonAttack();
   //pathFunction5();
 
   //finalBoss();
