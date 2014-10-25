@@ -28,6 +28,23 @@
                 <div class="initialForm">
                     <form class="heroNameForm" name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post" required>
                         <input type="text" placeholder="Hero name" name="fname">
+                        
+                                        
+						<input type=range min=0 max=10 value=5 id=stats step=1 onchange="outputUpdate(value)">
+				        <script>
+							function outputUpdate(att) {
+							  document.querySelector('#Attack').value = att;
+							}
+						</script>
+						<output id=Attack>5</output>
+						<script>
+							function outputUpdate(def) {
+							  document.querySelector('#Defense').value = 10 - def;
+							}
+						</script>
+						<output id=Defense>5</output>-Def
+				
+                        
                         <input type="submit" class="pure-button pure-button-primary" value="Submit">
                     </form>
                 </div>
