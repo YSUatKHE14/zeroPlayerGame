@@ -20,15 +20,15 @@ Green Dragon (Tier 1 Dragon) (Higher attack than Defense)
 
 {Mobs}
 
-Warg (Upgraded Wolf)
+Warg (Upgraded Wolf) add a crit m80
 
-Soldier 
+Soldier add a pierce negate 25% def
 
-Troll (Level 2 Troll)
+Troll Warlord (leveled up Troll) Bash dissabls 1 attack for player
 
-Behemoths (Upgraded Golems)
+Behemoths (Upgraded Golems) REAL FUCKIN HEAVY armor
 
-Red Dragon (Tier 2 Dragon)
+Red Dragon (Tier 2 Dragon) armor burn negates 50% def
 
 *BOSS* TBA
 
