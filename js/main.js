@@ -21,7 +21,7 @@ function switch_to_gameplay() {
 }
 
 function update_status() {
-  // document.getElementById("health").value = hero.health
+  document.getElementById("status_health").innerHTML = hero.health;
 }
 
 function gameplay() {

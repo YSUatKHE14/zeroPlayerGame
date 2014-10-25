@@ -27,6 +27,7 @@ var wolf = new Character();
 			document.getElementById("path").innerHTML += "<br />hero has attacked";
 			document.getElementById("path").innerHTML += "<br />" + wolf.health;
 		}
+		update_status();
 	}
 }
 
@@ -50,6 +51,7 @@ var bandit = new Character();
 			document.getElementById("path").innerHTML += "<br />hero has attacked";
 			document.getElementById("path").innerHTML += "<br />" + bandit.health;
 		}
+		update_status();
 	}
 }
 function trollsAttack() {
@@ -72,6 +74,7 @@ var troll = new Character();
 			document.getElementById("path").innerHTML += "<br />hero has attacked";
 			document.getElementById("path").innerHTML += "<br />" + troll.health;
 		}
+		update_status();
 	}
 }
 
@@ -95,6 +98,7 @@ var golem = new Character();
 			document.getElementById("path").innerHTML += "<br />hero has attacked";
 			document.getElementById("path").innerHTML += "<br />" + golem.health;
 		}
+		update_status();
 	}
 }
 
@@ -119,6 +123,7 @@ var dragon = new Character();
 			document.getElementById("path").innerHTML += "<br />hero has attacked";
 			document.getElementById("path").innerHTML += "<br />" + dragon.health;
 		}
+		update_status();
 	}
 }
 
