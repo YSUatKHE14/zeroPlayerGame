@@ -16,7 +16,7 @@ function initialize_character() {
 }
 
 function switch_to_gameplay() {
-  document.getElementById('initialization').style.display = "none";
+  document.getElementById('initialForm').style.display = "none";
   document.getElementById('gameplay').style.display = "block";
 }
 
