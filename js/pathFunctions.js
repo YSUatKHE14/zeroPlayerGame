@@ -1,6 +1,6 @@
 function generalAttack(attacker, receiver){
 	if(attacker.attack > receiver.defense){
-		receiver.health = receiver.health - (receiver.defense - attacker.attack);
+		receiver.health = receiver.health - (attacker.attack - receiver.defense);
 	}
 	else {
 		return;
