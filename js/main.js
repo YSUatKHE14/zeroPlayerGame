@@ -24,7 +24,7 @@ function update_status() {
 }
 
 function gameplay() {
-  //pathFunction1();
+  wolvesAttack();
   //pathFunction2();
   //pathFunction3();
   //pathFunction4();
