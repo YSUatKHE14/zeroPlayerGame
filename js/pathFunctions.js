@@ -98,7 +98,7 @@ var golem = new Character();
 	}
 }
 
-function dragonAttacks() {
+function dragonAttack() {
 // atk 30
 var dragon = new Character();
 		dragon.health = 60;
