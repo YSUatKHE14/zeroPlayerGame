@@ -38,17 +38,17 @@ function banditsAttack() {
 	while(wolf.health > 0 && hero.health > 0)
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
-		if(chance < 20){
+		if(chance < 30){
 			console.log(hero.health);
-			generalAttack(wolf, hero);
-			console.log("wolf has attacked");
+			generalAttack(bandit, hero);
+			console.log("bandit has attacked");
 			console.log(hero.health);
 		}
 		else {
-			console.log(wolf.health);
-			generalAttack(hero, wolf);
+			console.log(bandit.health);
+			generalAttack(hero, bandit);
 			console.log("hero has attacked");
-			console.log(wolf.health);
+			console.log(bandit.health);
 		}
 }
 
