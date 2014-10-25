@@ -16,16 +16,16 @@ var wolf = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 20){
-			console.log(hero.health);
+			document.getElementById("path").innerHTML += "<br />" + hero.health;
 			generalAttack(wolf, hero);
-			console.log("wolf has attacked");
-			console.log(hero.health);
+			document.getElementById("path").innerHTML += "<br />wolf has attacked";
+			document.getElementById("path").innerHTML += "<br />" + hero.health;
 		}
 		else {
-			console.log(wolf.health);
+			document.getElementById("path").innerHTML += "<br />" + wolf.health;
 			generalAttack(hero, wolf);
-			console.log("hero has attacked");
-			console.log(wolf.health);
+			document.getElementById("path").innerHTML += "<br />hero has attacked";
+			document.getElementById("path").innerHTML += "<br />" + wolf.health;
 		}
 	}
 }
@@ -39,16 +39,16 @@ var bandit = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 30){
-			console.log(hero.health);
+			document.getElementById("path").innerHTML += "<br />" + hero.health;
 			generalAttack(bandit, hero);
-			console.log("bandit has attacked");
-			console.log(hero.health);
+			document.getElementById("path").innerHTML += "<br />bandit has attacked";
+			document.getElementById("path").innerHTML += "<br />" + hero.health;
 		}
 		else {
-			console.log(bandit.health);
+			document.getElementById("path").innerHTML += "<br />" + bandit.health;
 			generalAttack(hero, bandit);
-			console.log("hero has attacked");
-			console.log(bandit.health);
+			document.getElementById("path").innerHTML += "<br />hero has attacked";
+			document.getElementById("path").innerHTML += "<br />" + bandit.health;
 		}
 	}
 }
@@ -61,16 +61,16 @@ var troll = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 35){
-			console.log(hero.health);
+			document.getElementById("path").innerHTML += "<br />" + hero.health;
 			generalAttack(troll, hero);
-			console.log("troll has attacked");
-			console.log(hero.health);
+			document.getElementById("path").innerHTML += "<br />troll has attacked";
+			document.getElementById("path").innerHTML += "<br />" + hero.health;
 		}
 		else {
-			console.log(troll.health);
+			document.getElementById("path").innerHTML += "<br />" + troll.health;
 			generalAttack(hero, troll);
-			console.log("hero has attacked");
-			console.log(troll.health);
+			document.getElementById("path").innerHTML += "<br />hero has attacked";
+			document.getElementById("path").innerHTML += "<br />" + troll.health;
 		}
 	}
 }
@@ -84,16 +84,16 @@ var golem = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 40){
-			console.log(hero.health);
+			document.getElementById("path").innerHTML += "<br />" + hero.health;
 			generalAttack(golem, hero);
-			console.log("golem has attacked");
-			console.log(hero.health);
+			document.getElementById("path").innerHTML += "<br />golem has attacked";
+			document.getElementById("path").innerHTML += "<br />" + hero.health;
 		}
 		else {
-			console.log(golem.health);
+			document.getElementById("path").innerHTML += "<br />" + golem.health;
 			generalAttack(hero, golem);
-			console.log("hero has attacked");
-			console.log(golem.health);
+			document.getElementById("path").innerHTML += "<br />hero has attacked";
+			document.getElementById("path").innerHTML += "<br />" + golem.health;
 		}
 	}
 }
@@ -108,16 +108,16 @@ var dragon = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 50){
-			console.log(hero.health);
+			document.getElementById("path").innerHTML += "<br />" + hero.health;
 			generalAttack(dragon, hero);
-			console.log("dragon has attacked");
-			console.log(hero.health);
+			document.getElementById("path").innerHTML += "<br />dragon has attacked";
+			document.getElementById("path").innerHTML += "<br />" + hero.health;
 		}
 		else {
-			console.log(dragon.health);
+			document.getElementById("path").innerHTML += "<br />" + dragon.health;
 			generalAttack(hero, dragon);
-			console.log("hero has attacked");
-			console.log(dragon.health);
+			document.getElementById("path").innerHTML += "<br />hero has attacked";
+			document.getElementById("path").innerHTML += "<br />" + dragon.health;
 		}
 	}
 }
