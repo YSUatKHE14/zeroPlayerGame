@@ -72,10 +72,15 @@ body{
 
 .initialForm{
     width: 100%;
+    padding-top: 10px;
     background-color: white;
 }
 
-
+.heroNameForm{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 

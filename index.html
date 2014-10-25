@@ -20,21 +20,28 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="initialForm">
-            <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post" required>
-                 Hero name: <input type="text" name="fname">
-            <input type="submit" value="Submit">
-            </form>
-        </div>
-        <div class="gameplay">
-            <div class="stats">
-                
+        
+        <div class="pure-g">
+            <div class="pure-u-2-24">
             </div>
-            <div class="path">
-                
+            <div class="pure-u-20-24"> 
+                <div class="initialForm">
+                    <form class="heroNameForm" name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post" required>
+                        <input type="text" placeholder="Hero name" name="fname">
+                        <input type="submit" class="pure-button pure-button-primary" value="Submit">
+                    </form>
+                </div>
+                <div class="gameplay">
+                    <div class="stats">
+                    </div>
+                    <div class="path">
+                    </div>
+                </div>
             </div>
+            <div class="pure-u-2-24"> ... </div>
         </div>
-
+           
+        
         <script src="js/main.js">console.log("test");</script>
     </body>
 </html>
