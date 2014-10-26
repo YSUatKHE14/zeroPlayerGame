@@ -7,6 +7,10 @@ function generalAttack(attacker, receiver){
 	}
 }
 var damageTaken = 0;
+var totalDamageDealt = 0;
+var totalDamageTaken = 0;
+var totalKills = 0;
+var totalTurns = 0;
 function wolvesAttack() {
 var wolf = new Character();
 		wolf.health = 30;
@@ -17,7 +21,7 @@ var wolf = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 20){
-			window.setInterval(function(){print_to_path(hero.health)}, 1000);
+			print_to_path(hero.health);
 			damageTaken = hero.health;
 			generalAttack(wolf, hero);
 			if(chance % 2 == 0){
@@ -33,6 +37,7 @@ var wolf = new Character();
 			print_to_path(wolf.health);
 		}
 		update_status();
+		totalKills += 1;
 	}
 }
 
@@ -61,6 +66,7 @@ var bandit = new Character();
 			print_to_path(bandit.health);
 		}
 		update_status();
+		totalKills += 1;
 	}
 }
 function trollsAttack() {
@@ -88,6 +94,7 @@ var troll = new Character();
 			print_to_path(troll.health);
 		}
 		update_status();
+		totalKills += 1;
 	}
 }
 
@@ -116,6 +123,7 @@ var golem = new Character();
 			print_to_path(golem.health);
 		}
 		update_status();
+		totalKills += 1;
 	}
 }
 
@@ -145,9 +153,12 @@ var dragon = new Character();
 			print_to_path(dragon.health);
 		}
 		update_status();
+		totalKills += 1;
 	}
 }
 
 function blackSquirrelAttacks() {
 
 }
+
+function Statistics()
