@@ -9,7 +9,7 @@ var hero = new Character();
 
 //initialize character
 function initialize_character() {
-  hero.name = document.getElementById('fname');
+  hero.name = document.getElementById('fname').value;
   hero.health = 100; // Starting health
   hero.attack = document.getElementById('stats'); // document.getElementById("attack").value
   hero.defense = 10 - document.getElementById('stats'); // document.getElementById("defense").value
