@@ -45,7 +45,7 @@ var wolf = new Character();
 			healthPlaceholder = wolf.health;
 			generalAttack(hero, wolf,0);
 			totalDamageDealt += (healthPlaceholder - wolf.health);
-			print_to_path(hero.name+" has attacked the wolf!"));
+			print_to_path(hero.name+" has attacked the wolf!");
 			print_to_path("wolfs health: "+wolf.health);
 		}
 		update_status();
