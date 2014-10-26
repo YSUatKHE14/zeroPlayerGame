@@ -4,9 +4,9 @@ function generalAttack(attacker, receiver, weaponBonus){
 		if(weaponBonus == 1){
 			receiver.health = receiver.health - ((attacker.attack + 2) - receiver.defense);
 		}else if(weaponBonus == -1){
-			receiver.health = reciever.health - ((attacker.attack - 2) - reciever.defense);
+			receiver.health = receiver.health - ((attacker.attack - 2) - receiver.defense);
 		}else{
-			receiver.health = reciever.health - (attacker.attack - reciever.defense);
+			receiver.health = receiver.health - (attacker.attack - receiver.defense);
 		}
 	}else {
 		 receiver.health -= 2;
