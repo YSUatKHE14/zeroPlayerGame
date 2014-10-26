@@ -43,11 +43,9 @@ var wolf = new Character();
 		}
 		else {
 			healthPlaceholder = wolf.health;
-			if(hero.weapon == "Mace"){
-			generalAttack(hero, wolf,1);
-			}
+			generalAttack(hero, wolf,0);
 			totalDamageDealt += (healthPlaceholder - wolf.health);
-			print_to_path(hero.name+" has attacked the wolf! and dealt: " + (healthPlaceholder - wolf.health));
+			print_to_path(hero.name+" has attacked the wolf!"));
 			print_to_path("wolfs health: "+wolf.health);
 		}
 		update_status();
@@ -78,7 +76,13 @@ var bandit = new Character();
 		}
 		else {
 			healthPlaceholder = bandit.health;
-			generalAttack(hero, bandit);
+			if(hero.weapon == "Sword"){
+				generalAttack(hero, bandit,1);
+			}else if(hero.weapon == "Bow"){
+				generalAttack(hero, bandit,-1);
+			}else{
+				generalAttack(hero, bandit,0);
+			}
 			totalDamageDealt += (healthPlaceholder - bandit.health);
 			print_to_path(hero.name+" has attacked a bandit");
 			print_to_path("bandit health: "+bandit.health);
