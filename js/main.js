@@ -42,9 +42,16 @@ function gameplay() {
   //finalBoss();
 }
 
+function showResults() {
+  $("div#path").children("p").each( function(index) {
+    $(this).delay(400*index).fadeIn(300, function() {document.getElementById("path").scrollTop = document.getElementById("path").scrollHeight;});
+  });
+}
+
 function run () {
   initialize_character();
   switch_to_gameplay();
   gameplay();
+  showResults();
 }
 
