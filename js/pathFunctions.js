@@ -17,7 +17,7 @@ var wolf = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 20){
-			print_to_path(hero.health);
+			window.setInterval(function(){print_to_path(hero.health)}, 1000);
 			damageTaken = hero.health;
 			generalAttack(wolf, hero);
 			if(chance % 2 == 0){
