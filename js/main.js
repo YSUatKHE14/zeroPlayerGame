@@ -43,6 +43,7 @@ function gameplay() {
 
 function showResults() {
   $("div#path").children("p").each( function(index) {
+	multiplier = Math.floor((Math.random() * 4) + 1);
     $(this).delay(400*index).fadeIn(300, function() {document.getElementById("path").scrollTop = document.getElementById("path").scrollHeight;});
   });
 }
