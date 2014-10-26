@@ -147,7 +147,13 @@ var golem = new Character();
 		}
 		else {
 			healthPlaceholder = golem.health;
-			generalAttack(hero, golem);
+			if(hero.weapon == "Mace"){
+				generalAttack(hero, golem,1);
+			}else if(hero.weapon == "Sword"){
+				generalAttack(hero, golem,-1);
+			}else{
+				generalAttack(hero, golem,0);
+			}
 			totalDamageDealt += (healthPlaceholder - golem.health);
 			print_to_path(hero.name+" has attacked the golem");
 			print_to_path("golem health: "+golem.health);
@@ -181,7 +187,13 @@ var dragon = new Character();
 		}
 		else {
 			healthPlaceholder = dragon.health;
-			generalAttack(hero, dragon);
+			if(hero.weapon == "Bow"){
+				generalAttack(hero, dragon,1);
+			}else if(hero.weapon == "Mace"){
+				generalAttack(hero, dragon,-1);
+			}else{
+				generalAttack(hero, dragon,0);
+			}
 			totalDamageDealt += (healthPlaceholder - dragon.health);
 			print_to_path(hero.name+" has attacked the dragon!");
 			print_to_path("dragon health: "+dragon.health);
