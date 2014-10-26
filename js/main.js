@@ -38,9 +38,6 @@ function gameplay() {
   banditsAttack();
   trollsAttack();
   dragonAttack();
-  //pathFunction5();
-  //finalBoss();
-  statistics();
 }
 
 function showResults() {
