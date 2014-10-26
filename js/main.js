@@ -38,6 +38,7 @@ function gameplay() {
   banditsAttack();
   trollsAttack();
   dragonAttack();
+  statistics();
 }
 
 function showResults() {
