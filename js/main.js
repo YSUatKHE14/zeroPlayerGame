@@ -13,6 +13,7 @@ function initialize_character() {
   hero.health = 100; // Starting health
   hero.attack = document.getElementById('stats').value; // document.getElementById("attack").value
   hero.defense = 10 - document.getElementById('stats').value; // document.getElementById("defense").value
+  hero.weapon = document.getElementById('weapon').value; //get chosen weapon
 }
 
 function switch_to_gameplay() {

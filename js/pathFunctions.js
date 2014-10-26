@@ -1,8 +1,14 @@
-function generalAttack(attacker, receiver){
+function generalAttack(attacker, receiver, weaponBonus){
+	//Weapon bonus of one means attacker gets bonus, 0 = neutral, and -1 = penalty
 	if(attacker.attack > receiver.defense){
-		receiver.health = receiver.health - (attacker.attack - receiver.defense);
-	}
-	else {
+		if(weaponBonus == 1){
+			receiver.health = receiver.health - ((attacker.attack + 2) - receiver.defense);
+		}else if(weaponBonus == -1{
+			receiver.health = reciever.health - ((attacker.attack - 2) - reciever.defense);
+		}else{
+			receiver.health = reciever.health - (attacker.attack - reciever.defense);
+		}
+	}else {
 		 receiver.health -= 2;
 	}
 }
@@ -37,9 +43,11 @@ var wolf = new Character();
 		}
 		else {
 			healthPlaceholder = wolf.health;
-			generalAttack(hero, wolf);
+			if(hero.weapon == "Mace"){
+			generalAttack(hero, wolf,1);
+			}
 			totalDamageDealt += (healthPlaceholder - wolf.health);
-			print_to_path(hero.name+" has attacked the wolf!");
+			print_to_path(hero.name+" has attacked the wolf! and dealt: " + (healthPlaceholder - wolf.health));
 			print_to_path("wolfs health: "+wolf.health);
 		}
 		update_status();
