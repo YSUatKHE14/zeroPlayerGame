@@ -181,13 +181,12 @@ var dragon = new Character();
 }
 
 function blackSquirrelAttacks() {
-
+	//I has no Tail D:
 }
 
 
 
-function Statistics() {
+function statistics() {
 	print_to_path("totalKills: " + totalKills);
 	print_to_path("totalTurns: " + totalTurns);
-
 }
