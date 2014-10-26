@@ -29,6 +29,7 @@
 
             <div class="pure-u-20-24 wrapper">
             <h1>The Adventures Of Sevythien</h1>
+            <!--> Uses PURE css. Class names have predefined css for stack allign, ordering, etc.<-->
                 <div id="initialForm" class="initialForm">
                     <form class="pure-form pure-form-aligned heroNameForm" name="myForm">
                         <div class="pure-control-group">
@@ -53,11 +54,16 @@
                             <div>
                                 <label for="weapon">Weapon</label>
                                 <select id="weapon" name="Weapon">
-                                    <option>MACE</option>
-                                    <option>SWORD</option>
-                                    <option>BOW</option>
+                                    <option>Mace</option>
+                                    <option>Sword</option>
+                                    <option>Bow</option>
                                 </select>
                             </div>
+                        </div>
+                        <div action="">
+                                <input type="radio" name="shield" value="yes">Shield
+                                <input type="radio" name="shield" value="no">No Shield  
+                        
                         </div>
                         <div class="pure-control-group">
                             <input type="button" class="pure-button pure-button-primary" value="Submit" onclick="return run();">
