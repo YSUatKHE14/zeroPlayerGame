@@ -38,8 +38,8 @@ function gameplay() {
   trollsAttack();
   dragonAttack();
   //pathFunction5();
-
   //finalBoss();
+  statistics();
 }
 
 function run () {
