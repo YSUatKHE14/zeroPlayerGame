@@ -9,10 +9,10 @@ var hero = new Character();
 
 //initialize character
 function initialize_character() {
-  hero.name = document.getElementById('fname');
+  hero.name = document.getElementById('fname').value;
   hero.health = 100; // Starting health
-  hero.attack = document.getElementById('stats'); // document.getElementById("attack").value
-  hero.defense = 10 - document.getElementById('stats'); // document.getElementById("defense").value
+  hero.attack = document.getElementById('stats').value; // document.getElementById("attack").value
+  hero.defense = 10 - document.getElementById('stats').value; // document.getElementById("defense").value
 }
 
 function switch_to_gameplay() {
@@ -25,8 +25,11 @@ function update_status() {
 }
 
 function print_to_path( stringToPrint ) {
-  document.getElementById("path").innerHTML += stringToPrint + "<br />";
-  document.getElementById("path").scrollTop = document.getElementById("path").scrollHeight;
+  var childElement = document.createElement("p");
+  childElement.innerHTML = stringToPrint;
+  childElement.style.display = "none";
+  document.getElementById("path").appendChild(childElement);
+  //document.getElementById("path").scrollTop = document.getElementById("path").scrollHeight;
 }
 
 function gameplay() {
