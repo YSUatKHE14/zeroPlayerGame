@@ -31,10 +31,9 @@ var wolf = new Character();
 			}
 		}
 		else {
-			print_to_path(wolf.health);
 			generalAttack(hero, wolf);
-			print_to_path("hero has attacked");
-			print_to_path(wolf.health);
+			print_to_path(hero.name+" has attacked the wolf!");
+			print_to_path("wolfs health: "+wolf.health);
 		}
 		update_status();
 		totalKills += 1;
@@ -60,10 +59,9 @@ var bandit = new Character();
 			}
 		}
 		else {
-			print_to_path(bandit.health);
 			generalAttack(hero, bandit);
-			print_to_path("hero has attacked");
-			print_to_path(bandit.health);
+			print_to_path(hero.name+" has attacked a bandit");
+			print_to_path("bandit health: "+bandit.health);
 		}
 		update_status();
 		totalKills += 1;
@@ -82,16 +80,15 @@ var troll = new Character();
 			damageTaken = hero.health;
 			generalAttack(troll, hero);
 			if(chance % 2 == 0){
-				print_to_path("Threw a small axe at you, hitting your chest dealing " + (damageTaken - hero.health) + " Damage");
+				print_to_path("a troll threw a small axe at you, hitting your chest dealing " + (damageTaken - hero.health) + " Damage");
 			}else{
 				print_to_path("The Troll smashed you with his club for " + (damageTaken - hero.health) + " Damage");
 			}
 		}
 		else {
-			print_to_path(troll.health);
 			generalAttack(hero, troll);
-			print_to_path("hero has attacked");
-			print_to_path(troll.health);
+			print_to_path(hero.name+" has attacked the troll");
+			print_to_path("troll health: "+troll.health);
 		}
 		update_status();
 		totalKills += 1;
@@ -117,10 +114,9 @@ var golem = new Character();
 			}
 		}
 		else {
-			print_to_path(golem.health);
 			generalAttack(hero, golem);
-			print_to_path("hero has attacked");
-			print_to_path(golem.health);
+			print_to_path(hero.name+" has attacked the golem");
+			print_to_path("golem health: "+golem.health);
 		}
 		update_status();
 		totalKills += 1;
@@ -147,10 +143,9 @@ var dragon = new Character();
 			}
 		}
 		else {
-			print_to_path(dragon.health);
 			generalAttack(hero, dragon);
-			print_to_path("hero has attacked");
-			print_to_path(dragon.health);
+			print_to_path(hero.name+" has attacked the dragon!");
+			print_to_path("dragon health: "+dragon.health);
 		}
 		update_status();
 		totalKills += 1;
