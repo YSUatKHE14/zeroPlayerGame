@@ -161,4 +161,9 @@ function blackSquirrelAttacks() {
 
 }
 
-function Statistics()
+
+
+function Statistics() {
+	print_to_path("totalKills: " + totalKills);
+	
+}
