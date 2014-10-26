@@ -189,4 +189,6 @@ function blackSquirrelAttacks() {
 function statistics() {
 	print_to_path("totalKills: " + totalKills);
 	print_to_path("totalTurns: " + totalTurns);
+	print_to_path("totalDamageDealt: " + totalDamageDealt);
+	print_to_path("totalDamageTaken: " + totalDamageTaken);
 }
