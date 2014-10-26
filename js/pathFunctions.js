@@ -4,7 +4,7 @@ function generalAttack(attacker, receiver){
 	}
 	else {
 		 receiver.health -= 2;
-	}
+	
 }
 
 var healthPlaceholder = 0;
@@ -28,6 +28,7 @@ var wolf = new Character();
 			healthPlaceholder = hero.health;
 			generalAttack(wolf, hero);
 			damageTaken = healthPlaceholder - hero.health;
+			totalDamageTaken += damageTaken;
 			if(chance % 2 == 0){
 				print_to_path("The wolf ran up to you and bit you for " + damageTaken + " Damage");
 			}else{
@@ -35,7 +36,9 @@ var wolf = new Character();
 			}
 		}
 		else {
+			healthPlaceholder = wolf.health;
 			generalAttack(hero, wolf);
+			totalDamageDealt += (healthPlaceholder - wolf.health);
 			print_to_path(hero.name+" has attacked the wolf!");
 			print_to_path("wolfs health: "+wolf.health);
 		}
@@ -58,6 +61,7 @@ var bandit = new Character();
 			healthPlaceholder = hero.health;
 			generalAttack(bandit, hero);
 			damageTaken = healthPlaceholder - hero.health;
+			totalDamageTaken += damageTaken;
 			if(chance % 2 == 0){
 				print_to_path("A clan of bandits knock you on the ground kicking you for " + damageTaken + " Damage");
 			}else{
@@ -65,7 +69,9 @@ var bandit = new Character();
 			}
 		}
 		else {
+			healthPlaceholder = bandit.health;
 			generalAttack(hero, bandit);
+			totalDamageDealt += (healthPlaceholder - bandit.health);
 			print_to_path(hero.name+" has attacked a bandit");
 			print_to_path("bandit health: "+bandit.health);
 		}
@@ -87,6 +93,7 @@ var troll = new Character();
 			healthPlaceholder = hero.health;
 			generalAttack(troll, hero);
 			damageTaken = healthPlaceholder - hero.health;
+			totalDamageTaken += damageTaken;
 			if(chance % 2 == 0){
 				print_to_path("a troll threw a small axe at you, hitting your chest dealing " + damageTaken + " Damage");
 			}else{
@@ -94,7 +101,9 @@ var troll = new Character();
 			}
 		}
 		else {
+			healthPlaceholder = troll.health;
 			generalAttack(hero, troll);
+			totalDamageDealt += (healthPlaceholder - troll.health);
 			print_to_path(hero.name+" has attacked the troll");
 			print_to_path("troll health: "+troll.health);
 		}
@@ -117,6 +126,7 @@ var golem = new Character();
 			healthPlaceholder = hero.health;
 			generalAttack(golem, hero);
 			damageTaken = healthPlaceholder - hero.health;
+			totalDamageTaken += damageTaken;
 			if(chance % 2 == 0){
 				print_to_path("Flails its arms smashing you into the ground. You took " + damageTaken + " Damage");
 			}else{
@@ -124,7 +134,9 @@ var golem = new Character();
 			}
 		}
 		else {
+			healthPlaceholder = golem.health;
 			generalAttack(hero, golem);
+			totalDamageDealt += (healthPlaceholder - golem.health);
 			print_to_path(hero.name+" has attacked the golem");
 			print_to_path("golem health: "+golem.health);
 		}
@@ -148,6 +160,7 @@ var dragon = new Character();
 			healthPlaceholder = hero.health;
 			generalAttack(dragon, hero);
 			damageTaken = healthPlaceholder - hero.health;
+			totalDamageTaken += damageTaken;
 			if(chance % 2 == 0){
 				print_to_path("Breaths green flames at you which inflicted a burn on you. You took " + damageTaken + " Damage");
 			}else{
@@ -155,7 +168,9 @@ var dragon = new Character();
 			}
 		}
 		else {
+			healthPlaceholder = dragon.health;
 			generalAttack(hero, dragon);
+			totalDamageDealt += (healthPlaceholder - dragon.health);
 			print_to_path(hero.name+" has attacked the dragon!");
 			print_to_path("dragon health: "+dragon.health);
 		}
