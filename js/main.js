@@ -4,6 +4,7 @@ function Character() {
   this.health = 100;
   this.attack = 10;
   this.defense = 10;
+  this.items = [];
 }
 var hero = new Character();
 
