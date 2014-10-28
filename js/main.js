@@ -14,6 +14,7 @@ function initialize_character() {
   hero.attack = document.getElementById('stats').value; // document.getElementById("attack").value
   hero.defense = 10 - document.getElementById('stats').value; // document.getElementById("defense").value
   hero.weapon = document.getElementById('weapon').value; //get chosen weapon
+  hero.shield = false; // who knows if they chose the shield?
 	// Total Jankery is happening below
   hero.inventory = document.querySelectorAll('.inventory:checked'); // hey future people, this is an array of checkbox values. so use hero.inventory[i].value; to get what you want. Idk what else to do :'-(
   hero.numberOfItems = hero.inventory.length;

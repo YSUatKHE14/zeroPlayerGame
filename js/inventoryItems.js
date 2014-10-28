@@ -2,8 +2,8 @@
 // I'd say we should have a checkbox full of ~10 items where the player can pick about 3
 // Shield can be implemented with this
 function useItem(){
-	for(var i = 0; i < 3; i++){
-		switch(hero.inventory){
+	for(var i = 0; i < hero.numberOfItems; i++){
+		switch(hero.inventory[i].value){
 			case "healthPotion":
 				healthPotion(hero);
 				break;
@@ -47,7 +47,16 @@ function healthPotion(hero){
 		print_to_path(hero.name+"'s health: "+hero.health);
 	}
 }
-function shield(){
+function shield(hero){
+	if(!hero.shield){
+		var shieldChance = Math.floor((Math.random() * 10) + 5)
+		var attackChance = Math.floor(Math.random() * 10);
+		hero.defence += shieldChance;
+		hero.attack -= attackChance;
+		print_to_path(hero.name+"'s shield has increased his defence by "+shieldChance);
+		print_to_path("However, it slowed down his attack lowering it by "+attackChance+" points");
+		hero.shield = true;
+	}
 }
 function rabidToad(){
 }
