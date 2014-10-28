@@ -4,7 +4,6 @@ function Character() {
   this.health = 100;
   this.attack = 10;
   this.defense = 10;
-  this.items = [];
 }
 var hero = new Character();
 
@@ -15,6 +14,16 @@ function initialize_character() {
   hero.attack = document.getElementById('stats').value; // document.getElementById("attack").value
   hero.defense = 10 - document.getElementById('stats').value; // document.getElementById("defense").value
   hero.weapon = document.getElementById('weapon').value; //get chosen weapon
+  var checkedValue = null; 
+  hero.inventory = document.querySelector('.inventory:checked').value;
+  for(var i=0; hero.inventory[i]; ++i){
+        if(hero.inventory[i].checked){
+             checkedValue = inputElements[i].value;
+             break;
+        }
+  }
+  console.log(hero.inventory);
+  console.log(checkedValue);
 }
 
 function switch_to_gameplay() {
@@ -51,6 +60,7 @@ function showResults() {
 
 function run () {
   initialize_character();
+  console.log(hero);
   switch_to_gameplay();
   gameplay();
   showResults();
