@@ -15,7 +15,7 @@ function initialize_character() {
   hero.defense = 10 - document.getElementById('stats').value; // document.getElementById("defense").value
   hero.weapon = document.getElementById('weapon').value; //get chosen weapon
 	// Total Jankery is happening below
-  hero.inventory = document.querySelectorAll('.inventory:checked');
+  hero.inventory = document.querySelectorAll('.inventory:checked'); // hey future people, this is an array of checkbox values. so use hero.inventory[i].value; to get what you want. Idk what else to do :'-(
 }
 
 function switch_to_gameplay() {
@@ -36,9 +36,14 @@ function print_to_path( stringToPrint ) {
 }
 
 function gameplay() {
+  // hero is such a global variable... someone should be smacked
+  useItem(hero);
   wolvesAttack();
+  useItem(hero);
   banditsAttack();
+  useItem(hero);
   trollsAttack();
+  useItem(hero);
   dragonAttack();
   statistics();
 }
