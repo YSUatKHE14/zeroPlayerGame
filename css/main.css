@@ -108,8 +108,14 @@ h1{
     margin-right: 100px;
 }
 
+.checkBoxTable{
+    margin-left: auto;
+    margin-right: auto;
+}
 
-
+.tableHeader{
+    text-align: center;
+}
 
 
 /* ==========================================================================
