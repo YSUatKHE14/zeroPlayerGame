@@ -3,7 +3,7 @@
 // Shield can be implemented with this
 function useItem(hero){
 	for(var i = 0; i < 3; i++){
-		switch(hero.items[i]){
+		switch(hero.inventory[i].value){
 			case "healthPotion":
 				healthPotion(hero);
 				break;
