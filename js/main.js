@@ -14,18 +14,8 @@ function initialize_character() {
   hero.attack = document.getElementById('stats').value; // document.getElementById("attack").value
   hero.defense = 10 - document.getElementById('stats').value; // document.getElementById("defense").value
   hero.weapon = document.getElementById('weapon').value; //get chosen weapon
-  var checkedValue = null; 
-  hero.inventory = document.querySelector('.inventory:checked').value;
-  for(var i=0; hero.inventory[i]; ++i){
-	console.log("the stuff isnt happening yet. heres i "+i);
-        if(hero.inventory[i].checked){
-			console.log("stuff is happening");
-             checkedValue = inputElements[i].value;
-             break;
-        }
-  }
-  console.log(hero.inventory);
-  console.log(checkedValue);
+	// Total Jankery is happening below
+  hero.inventory = document.querySelectorAll('.inventory:checked');
 }
 
 function switch_to_gameplay() {
