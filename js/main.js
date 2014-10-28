@@ -17,7 +17,9 @@ function initialize_character() {
   var checkedValue = null; 
   hero.inventory = document.querySelector('.inventory:checked').value;
   for(var i=0; hero.inventory[i]; ++i){
+	console.log("the stuff isnt happening yet. heres i "+i);
         if(hero.inventory[i].checked){
+			console.log("stuff is happening");
              checkedValue = inputElements[i].value;
              break;
         }
