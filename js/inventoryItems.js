@@ -21,7 +21,7 @@ function useItem(hero){
 				break;
 			case "soupThatIsTooHot":
 				soupThatIsTooHot(hero);
-				break:
+				break;
 			case "throwingStar":
 				throwingStar(hero);
 				break;
