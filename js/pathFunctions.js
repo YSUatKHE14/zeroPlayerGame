@@ -51,7 +51,10 @@ var wolf = new Character();
 		update_status();
 		totalTurns += 1;
 	}
-	totalKills += 1;
+	if(wolf.health <= 0){
+	console.log("wolf kill");
+		totalKills += 1;
+	}
 }
 
 function banditsAttack() {
@@ -90,7 +93,10 @@ var bandit = new Character();
 		update_status();
 		totalTurns += 1;
 	}
-	totalKills += 1;
+	if(bandit.health <= 0){
+	console.log("bandit kill");
+		totalKills += 1;
+	}
 }
 function trollsAttack() {
 var troll = new Character();
@@ -122,7 +128,10 @@ var troll = new Character();
 		update_status();
 		totalTurns += 1;
 	}
-	totalKills += 1;
+	if(troll.health <= 0){
+		console.log("troll kill");
+		totalKills += 1;
+	}
 }
 
 function golemsAttack() {
@@ -161,7 +170,10 @@ var golem = new Character();
 		update_status();
 		totalTurns += 1;
 	}
-	totalKills += 1;
+	if(golem.health <= 0){
+	console.log("golem kill");
+		totalKills += 1;
+	}
 }
 
 function dragonAttack() {
@@ -201,11 +213,14 @@ var dragon = new Character();
 		update_status();
 		totalTurns += 1;
 	}
-	totalKills += 1;
+	if(dragon.health <= 0){
+	console.log("dragon kill");
+		totalKills += 1;
+	}
 }
 
 function blackSquirrelAttacks() {
-	//I has no Tail D:
+	// I has no Tail D:
 }
 
 

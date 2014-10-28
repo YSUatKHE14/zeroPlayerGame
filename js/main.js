@@ -52,6 +52,8 @@ function gameplay() {
   useItem();
   trollsAttack();
   useItem();
+  golemsAttack();
+  useItem();
   dragonAttack();
   statistics();
 }
