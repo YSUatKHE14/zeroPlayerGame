@@ -60,8 +60,64 @@
                                 </select>
                             </div>
                         </div>
-                        <div action=""><!-- What is this about? Brent, I know you did this. I know how to use git blame now.-->
-								<input type="checkbox" name="inventory" value="healthPotion">health potion
+
+                        <div class="pure-control-group">
+                            <table class="pure-table pure-table-bordered checkBoxTable">
+                                <!-- Put all the possible item's checkboxes in a table -->
+                                <thead>
+                                    <tr>
+                                        <th colspan="3" class="tableHeader">Inventory (MAX of 3 items)</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <!-- First row of checkboxes-->
+                                    <tr>
+                                        <td align="left">
+                                           <input type="checkbox" name="inventory" value="healthPotion">Health Potion 
+                                        </td>
+                                        <td align="left">
+                                            <input type="checkbox" name="inventory" value="shield">Shield 
+                                        </td>
+                                        <td align="left">
+                                            <input type="checkbox" name="inventory" value="rabidToad">Rabid Toad
+                                        </td>
+                                    </tr>
+                                    <!-- Second row of checkboxes -->
+                                    <tr>
+                                        <td align="left">
+                                            <input type="checkbox" name="inventory" value="bigMac">Big Mac
+                                        </td>
+                                        <td align="left">
+                                            <input type="checkbox" name="inventory" value="theLiteralHeartOfALion">The Literal Heart of a Lion
+                                        </td>
+                                        <td align="left">
+                                            <input type="checkbox" name="inventory" value="soupThatIsTooHot">Soup That Is Too Hot
+                                        </td>
+                                    </tr>
+                                    <!-- Third row of checkboxes -->
+                                    <tr>
+                                        <td align="left">
+                                            <input type="checkbox" name="inventory" value="throwingStar">Throwing Star
+                                        </td>
+                                        <td align="left">
+                                            <input type="checkbox" name="inventory" value="poison">Poison
+                                        </td>
+                                        <td align="left">
+                                            <input type="checkbox" name="inventory" value="aBucketOfChildrensTears">A Bucket Of Children's Tears
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+<!--
+
+
+                        <div action="">
+								<input type="checkbox" name="inventory" value="healthPotion">Health Potion
                                 <input type="checkbox" name="inventory" value="shield">Shield 
 								<input type="checkbox" name="inventory" value="rabidToad">rabid toad
 								<br>
@@ -74,6 +130,9 @@
 								<input type="checkbox" name="inventory" value="aBucketOfChildrensTears">A Bucket Of Children's Tears
 								<input type="checkbox" name="inventory" value="theLastKnownBison">The Last Known Bison
                         </div>
+
+-->
+
                         <div class="pure-control-group">
                             <input type="button" class="pure-button pure-button-primary" value="Submit" onclick="return run();">
                         </div>
