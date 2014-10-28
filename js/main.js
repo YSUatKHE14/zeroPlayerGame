@@ -16,6 +16,7 @@ function initialize_character() {
   hero.weapon = document.getElementById('weapon').value; //get chosen weapon
 	// Total Jankery is happening below
   hero.inventory = document.querySelectorAll('.inventory:checked'); // hey future people, this is an array of checkbox values. so use hero.inventory[i].value; to get what you want. Idk what else to do :'-(
+  console.log("peanut butter"+hero.inventory[0].value);
 }
 
 function switch_to_gameplay() {
@@ -57,7 +58,7 @@ function showResults() {
 
 function run () {
   initialize_character();
-  console.log(hero.inventory[0]);
+  console.log(hero.inventory);
   switch_to_gameplay();
   gameplay();
   showResults();
