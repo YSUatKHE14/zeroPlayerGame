@@ -31,6 +31,9 @@ function useItem(){
 			case "aBucketOfChildrensTears":
 				aBucketOfChildrensTears(hero);
 				break;
+			case "theLastKnownBison":
+				theLastKnownBison(hero);
+				break;
 		}
 	}
 }
