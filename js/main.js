@@ -37,13 +37,13 @@ function print_to_path( stringToPrint ) {
 
 function gameplay() {
   // hero is such a global variable... someone should be smacked
-  useItem(hero);
+  useItem();
   wolvesAttack();
-  useItem(hero);
+  useItem();
   banditsAttack();
-  useItem(hero);
+  useItem();
   trollsAttack();
-  useItem(hero);
+  useItem();
   dragonAttack();
   statistics();
 }
@@ -57,7 +57,7 @@ function showResults() {
 
 function run () {
   initialize_character();
-  console.log(hero);
+  console.log(hero.inventory[0]);
   switch_to_gameplay();
   gameplay();
   showResults();
