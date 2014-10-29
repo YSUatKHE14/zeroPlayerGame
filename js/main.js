@@ -56,6 +56,19 @@ function gameplay() {
   statistics();
 }
 
+function play_again_button(){
+	var playAgainButton = document.createElement("input");
+	playAgainButton.type = "button";
+	playAgainButton.class = "pure-button pure-button-primary" 
+	playAgainButton.value ="Replay";
+	playAgainButton.onclick = "reset_game();"
+	
+}
+
+function reset_game(){ // functionalized so it can be changed later. If there is a better way.
+	location.reload();
+}
+
 function showResults() {
   $("div#path").children("p").each( function(index) {
 	multiplier = Math.floor((Math.random() * 4) + 1);
@@ -67,5 +80,6 @@ function run() {
   switch_to_gameplay();
   gameplay();
   showResults();
+  play_again_button();
 }
 
