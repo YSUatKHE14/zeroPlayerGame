@@ -12,7 +12,10 @@ function generalAttack(attacker, receiver, weaponBonus){
 		 receiver.health -= 2;
 	}
 }
-
+function death(){
+	console.log("should be dead");
+	hero.alive = false;
+}
 var healthPlaceholder = 0;
 var damageTaken = 0;
 var totalDamageDealt = 0;
@@ -54,6 +57,9 @@ var wolf = new Character();
 	if(wolf.health <= 0){
 	console.log("wolf kill");
 		totalKills += 1;
+	}
+	if(hero.health<= 0){
+		death();
 	}
 }
 
@@ -97,6 +103,9 @@ var bandit = new Character();
 	console.log("bandit kill");
 		totalKills += 1;
 	}
+	if(hero.health<= 0){
+		death();
+	}
 }
 function trollsAttack() {
 var troll = new Character();
@@ -131,6 +140,9 @@ var troll = new Character();
 	if(troll.health <= 0){
 		console.log("troll kill");
 		totalKills += 1;
+	}
+	if(hero.health<= 0){
+		death();
 	}
 }
 
@@ -174,6 +186,9 @@ var golem = new Character();
 	console.log("golem kill");
 		totalKills += 1;
 	}
+	if(hero.health<= 0){
+		death();
+	}
 }
 
 function dragonAttack() {
@@ -216,6 +231,9 @@ var dragon = new Character();
 	if(dragon.health <= 0){
 	console.log("dragon kill");
 		totalKills += 1;
+	}
+	if(hero.health<= 0){
+		death();
 	}
 }
 
