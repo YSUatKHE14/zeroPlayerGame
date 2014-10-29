@@ -35,10 +35,6 @@ function switch_to_gameplay() {
   document.getElementById('gameplay').style.display = "block";
 }
 
-function update_status() {
-  document.getElementById("status_health").innerHTML = hero.health;
-}
-
 function print_to_path( stringToPrint ) {
   var childElement = document.createElement("p");
   childElement.innerHTML = stringToPrint;

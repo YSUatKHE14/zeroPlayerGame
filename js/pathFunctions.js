@@ -51,7 +51,6 @@ var wolf = new Character();
 			print_to_path(hero.name+" has attacked the wolf!");
 			print_to_path("wolfs health: "+wolf.health);
 		}
-		update_status();
 		totalTurns += 1;
 	}
 	if(wolf.health <= 0){
@@ -96,7 +95,6 @@ var bandit = new Character();
 			print_to_path(hero.name+" has attacked a bandit");
 			print_to_path("bandit health: "+bandit.health);
 		}
-		update_status();
 		totalTurns += 1;
 	}
 	if(bandit.health <= 0){
@@ -134,7 +132,6 @@ var troll = new Character();
 			print_to_path(hero.name+" has attacked the troll");
 			print_to_path("troll health: "+troll.health);
 		}
-		update_status();
 		totalTurns += 1;
 	}
 	if(troll.health <= 0){
@@ -179,7 +176,6 @@ var golem = new Character();
 			print_to_path(hero.name+" has attacked the golem");
 			print_to_path("golem health: "+golem.health);
 		}
-		update_status();
 		totalTurns += 1;
 	}
 	if(golem.health <= 0){
@@ -225,7 +221,6 @@ var dragon = new Character();
 			print_to_path(hero.name+" has attacked the dragon!");
 			print_to_path("dragon health: "+dragon.health);
 		}
-		update_status();
 		totalTurns += 1;
 	}
 	if(dragon.health <= 0){
