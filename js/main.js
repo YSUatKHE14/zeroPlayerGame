@@ -14,15 +14,27 @@ function initialize_character() {
   hero.attack = document.getElementById('stats').value; // document.getElementById("attack").value
   hero.defense = 10 - document.getElementById('stats').value; // document.getElementById("defense").value
   hero.weapon = document.getElementById('weapon').value; //get chosen weapon
+  hero.shield = false; // who knows if they chose the shield?
+  hero.alive = true;
+	// Total Jankery is happening below
+  hero.inventory = document.querySelectorAll('.inventory:checked'); // hey future people, this is an array of checkbox values. so use hero.inventory[i].value; to get what you want. Idk what else to do :'-(
+  hero.numberOfItems = hero.inventory.length;
+  if(hero.numberOfItems > 3){
+	alert("You have too many items!");
+  }
+  else if(hero.name == ''){
+	alert("Please enter a name for your hero"); // everything right here is done to piss Joe off
+  }         else{                               // especially this:-P
+	run();
+  }
 }
+
+// Black magic
+var enemyArray = [wolvesAttack, banditsAttack, trollsAttack, golemsAttack, dragonAttack];
 
 function switch_to_gameplay() {
   document.getElementById('initialForm').style.display = "none";
   document.getElementById('gameplay').style.display = "block";
-}
-
-function update_status() {
-  document.getElementById("status_health").innerHTML = hero.health;
 }
 
 function print_to_path( stringToPrint ) {
@@ -34,11 +46,27 @@ function print_to_path( stringToPrint ) {
 }
 
 function gameplay() {
-  wolvesAttack();
-  banditsAttack();
-  trollsAttack();
-  dragonAttack();
+  // hero is such a global variable... someone should be smacked
+  for(var i = 0; i < enemyArray.length; i++){
+    if(hero.alive){
+		useItem();
+		enemyArray[i](); // the blackest of magic
+	}
+  }
   statistics();
+}
+
+function play_again_button(){
+	var playAgainButton = document.createElement("input");
+	playAgainButton.type = "button";
+	playAgainButton.class = "pure-button pure-button-primary" 
+	playAgainButton.value ="Replay";
+	playAgainButton.onclick = "reset_game();"
+	
+}
+
+function reset_game(){ // functionalized so it can be changed later. If there is a better way.
+	location.reload();
 }
 
 function showResults() {
@@ -48,10 +76,10 @@ function showResults() {
   });
 }
 
-function run () {
-  initialize_character();
+function run() {
   switch_to_gameplay();
   gameplay();
   showResults();
+  play_again_button();
 }
 

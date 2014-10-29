@@ -7,3 +7,5 @@ Thanks so much for the KHE team for having us!
 ##To play
 
 Simply clone the master branch and launch index.html in a HTML5 browser. The game is all HTML5, CSS, and JavaScript, and is completely client side. It should pretty much run on anything.
+
+Or you can play the latest release at http://ysuatkhe14.github.io/zeroPlayerGame/ .
