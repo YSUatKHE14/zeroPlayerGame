@@ -16,6 +16,8 @@ function death(){
 	console.log("should be dead");
 	hero.alive = false;
 }
+
+// Global variables, we're all going to hell
 var healthPlaceholder = 0;
 var damageTaken = 0;
 var totalDamageDealt = 0;
@@ -105,6 +107,7 @@ var bandit = new Character();
 		death();
 	}
 }
+
 function trollsAttack() {
 var troll = new Character();
 		troll.health = 50;

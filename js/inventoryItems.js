@@ -39,8 +39,9 @@ function useItem(){
 }
 
 function healthPotion(hero){
+	console.log("gettin his drank on");
 	if(hero.health < 30){
-		var potionChance = Math.floor((Math.random() * 20) + 10);
+		var potionChance = Math.floor((Math.random() * 90) + 10);
 		var print = hero.name+" has ingested a potion and gained "+potionChance+" points of health!";
 		hero.health += potionChance;
 		print_to_path(print);

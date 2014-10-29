@@ -45,7 +45,7 @@ function print_to_path( stringToPrint ) {
 
 function gameplay() {
   // hero is such a global variable... someone should be smacked
-  for(var i = 0; i<enemyArray.length; i++){
+  for(var i = 0; i < enemyArray.length; i++){
     if(hero.alive){
 		useItem();
 		enemyArray[i](); // the blackest of magic
@@ -61,7 +61,7 @@ function showResults() {
   });
 }
 
-function run () {
+function run() {
   switch_to_gameplay();
   gameplay();
   showResults();
