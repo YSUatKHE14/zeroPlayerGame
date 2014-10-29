@@ -26,6 +26,9 @@ function initialize_character() {
   }
 }
 
+// Black magic
+var enemyArray = [wolvesAttack, banditsAttack, trollsAttack, golemsAttack, dragonAttack];
+
 function switch_to_gameplay() {
   document.getElementById('initialForm').style.display = "none";
   document.getElementById('gameplay').style.display = "block";
@@ -45,16 +48,10 @@ function print_to_path( stringToPrint ) {
 
 function gameplay() {
   // hero is such a global variable... someone should be smacked
-  useItem();
-  wolvesAttack();
-  useItem();
-  banditsAttack();
-  useItem();
-  trollsAttack();
-  useItem();
-  golemsAttack();
-  useItem();
-  dragonAttack();
+  for(var i = 0; i<enemyArray.length; i++){
+    useItem();
+	enemyArray[i](); // the blackest of magic
+  }
   statistics();
 }
 
