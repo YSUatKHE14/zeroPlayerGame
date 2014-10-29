@@ -59,7 +59,18 @@ function shield(hero){
 		hero.shield = true;
 	}
 }
-function rabidToad(){
+function rabidToad(hero){
+	var throwToadChance = Math.floor((Math.random() * 90) + 10);
+	var eatToadChance = Math.floor((Math.random() * 90) + 10);
+	if(throwToadChance > eatToadChance){
+		//time to throw some toad
+		hero.attack += 5;
+	}
+	else{
+		//eat the toad
+		hero.attack += 5;
+		hero.health -=5;
+	}
 }
 function bigMac(){
 }
