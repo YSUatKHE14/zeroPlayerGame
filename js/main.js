@@ -20,9 +20,11 @@ function initialize_character() {
   hero.inventory = document.querySelectorAll('.inventory:checked'); // hey future people, this is an array of checkbox values. so use hero.inventory[i].value; to get what you want. Idk what else to do :'-(
   hero.numberOfItems = hero.inventory.length;
   if(hero.numberOfItems > 3){
-	alert("you have too many items!");
+	alert("You have too many items!");
   }
-  else {
+  else if(hero.name == ''){
+	alert("Please enter a name for your hero"); // everything right here is done to piss Joe off
+  }         else{                               // especially this:-P
 	run();
   }
 }
