@@ -33,28 +33,28 @@ var wolf = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 20){
-			print_to_path(hero.health);
+			print_to_path(hero.name + " currently has " + hero.health + " health");
 			healthPlaceholder = hero.health;
 			generalAttack(wolf, hero);
 			damageTaken = healthPlaceholder - hero.health;
 			totalDamageTaken += damageTaken;
 			if(chance % 2 == 0){
-				print_to_path("The wolf ran up to you and bit you for " + damageTaken + " Damage");
+				print_to_path("A wolf runs up and bites "+hero.name+" for " + damageTaken + " damage");
 			}else{
-				print_to_path("The wolf clawed you for " + damageTaken + " Damage");
+				print_to_path("A wolf claww "+hero.name+" for " + damageTaken + " damage");
 			}
 		}
 		else {
 			healthPlaceholder = wolf.health;
 			generalAttack(hero, wolf,0);
 			totalDamageDealt += (healthPlaceholder - wolf.health);
-			print_to_path(hero.name+" has attacked the wolf!");
-			print_to_path("wolfs health: "+wolf.health);
+			print_to_path(hero.name+" attacks the wolf!");
+			print_to_path("The wolf's health falls to "+wolf.health);
 		}
 		totalTurns += 1;
 	}
 	if(wolf.health <= 0){
-	console.log("wolf kill");
+	console.log("wolf dead");
 		totalKills += 1;
 	}
 	if(hero.health<= 0){
@@ -71,15 +71,15 @@ var bandit = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 30){
-			print_to_path(hero.health);
+			print_to_path(hero.name + " currently has " + hero.health + " health");
 			healthPlaceholder = hero.health;
 			generalAttack(bandit, hero);
 			damageTaken = healthPlaceholder - hero.health;
 			totalDamageTaken += damageTaken;
 			if(chance % 2 == 0){
-				print_to_path("A clan of bandits knock you on the ground kicking you for " + damageTaken + " Damage");
+				print_to_path("A clan of bandits knocks "+hero.name+" to the ground dealing " + damageTaken + " Damage");
 			}else{
-				print_to_path("A bandit snuck up from behind you and stabbed you dealing " + damageTaken + " Damage");
+				print_to_path("A bandit Seaks up from behind stabbs "+hero.name+" dealing " + damageTaken + " Damage");
 			}
 		}
 		else {
@@ -92,13 +92,13 @@ var bandit = new Character();
 				generalAttack(hero, bandit,0);
 			}
 			totalDamageDealt += (healthPlaceholder - bandit.health);
-			print_to_path(hero.name+" has attacked a bandit");
-			print_to_path("bandit health: "+bandit.health);
+			print_to_path(hero.name+" attacks a bandit!");
+			print_to_path("The bandit's health falls to "+bandit.health);
 		}
 		totalTurns += 1;
 	}
 	if(bandit.health <= 0){
-	console.log("bandit kill");
+	console.log("bandit dead");
 		totalKills += 1;
 	}
 	if(hero.health<= 0){
@@ -114,28 +114,28 @@ var troll = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 35){
-			print_to_path(hero.health);
+			print_to_path(hero.name + " currently has " + hero.health + " health");
 			healthPlaceholder = hero.health;
 			generalAttack(troll, hero);
 			damageTaken = healthPlaceholder - hero.health;
 			totalDamageTaken += damageTaken;
 			if(chance % 2 == 0){
-				print_to_path("a troll threw a small axe at you, hitting your chest dealing " + damageTaken + " Damage");
+				print_to_path("A troll throws a small axe at "+hero.name+" dealing " + damageTaken + " damage");
 			}else{
-				print_to_path("The Troll smashed you with his club for " + damageTaken + " Damage");
+				print_to_path("A troll smashes "+hero.name+" with his club for " + damageTaken + " damage");
 			}
 		}
 		else {
 			healthPlaceholder = troll.health;
 			generalAttack(hero, troll);
 			totalDamageDealt += (healthPlaceholder - troll.health);
-			print_to_path(hero.name+" has attacked the troll");
-			print_to_path("troll health: "+troll.health);
+			print_to_path(hero.name+" attacks the troll!");
+			print_to_path("The troll's health falls to "+troll.health);
 		}
 		totalTurns += 1;
 	}
 	if(troll.health <= 0){
-		console.log("troll kill");
+		console.log("troll dead");
 		totalKills += 1;
 	}
 	if(hero.health<= 0){
@@ -152,15 +152,15 @@ var golem = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 20){
-			print_to_path(hero.health);
+			print_to_path(hero.name + " currently has " + hero.health + " health");
 			healthPlaceholder = hero.health;
 			generalAttack(golem, hero);
 			damageTaken = healthPlaceholder - hero.health;
 			totalDamageTaken += damageTaken;
 			if(chance % 2 == 0){
-				print_to_path("Flails its arms smashing you into the ground. You took " + damageTaken + " Damage");
+				print_to_path("A golem flails its arms, smashing "+hero.name+" into the ground, dealing " + damageTaken + " damage");
 			}else{
-				print_to_path("Stomps its foot on the ground causing rocks to fall on you from the nearby mountain. You took " + damageTaken + " Damage");
+				print_to_path("A golem stomps its foot on the ground causing rocks to fall on "+hero.name+" from the nearby mountain. dealing " + damageTaken + " Damage");
 			}
 		}
 		else {
@@ -173,13 +173,13 @@ var golem = new Character();
 				generalAttack(hero, golem,0);
 			}
 			totalDamageDealt += (healthPlaceholder - golem.health);
-			print_to_path(hero.name+" has attacked the golem");
-			print_to_path("golem health: "+golem.health);
+			print_to_path(hero.name+" attacks the golem!");
+			print_to_path("The golem's health falls to "+golem.health);
 		}
 		totalTurns += 1;
 	}
 	if(golem.health <= 0){
-	console.log("golem kill");
+	console.log("golem dead");
 		totalKills += 1;
 	}
 	if(hero.health<= 0){
@@ -197,15 +197,15 @@ var dragon = new Character();
 	{
 		var chance = Math.floor((Math.random() * 100) + 1);
 		if(chance < 20){
-			print_to_path(hero.health);
+			print_to_path(hero.name + " currently has " + hero.health + " health");
 			healthPlaceholder = hero.health;
 			generalAttack(dragon, hero);
 			damageTaken = healthPlaceholder - hero.health;
 			totalDamageTaken += damageTaken;
 			if(chance % 2 == 0){
-				print_to_path("Breaths green flames at you which inflicted a burn on you. You took " + damageTaken + " Damage");
+				print_to_path("A dragon breaths green flames at "+hero.name+" which inflicted a burn, dealing " + damageTaken + " damage");
 			}else{
-				print_to_path("Swipes its tail along the floor flinging you into the wall. You took " + damageTaken + " Damage");
+				print_to_path("A dragon wipes its tail along the floor flinging "+hero.name+" into the wall, dealing " + damageTaken + " damage");
 			}
 		}
 		else {
@@ -218,13 +218,13 @@ var dragon = new Character();
 				generalAttack(hero, dragon,0);
 			}
 			totalDamageDealt += (healthPlaceholder - dragon.health);
-			print_to_path(hero.name+" has attacked the dragon!");
-			print_to_path("dragon health: "+dragon.health);
+			print_to_path(hero.name+" attacks the dragon!");
+			print_to_path("The dragon's health falls to: "+dragon.health);
 		}
 		totalTurns += 1;
 	}
 	if(dragon.health <= 0){
-	console.log("dragon kill");
+	console.log("dragon dead");
 		totalKills += 1;
 	}
 	if(hero.health<= 0){
@@ -236,11 +236,11 @@ function blackSquirrelAttacks() {
 	// I has no Tail D:
 }
 
-
-
 function statistics() {
-	print_to_path("totalKills: " + totalKills);
-	print_to_path("totalTurns: " + totalTurns);
-	print_to_path("totalDamageDealt: " + totalDamageDealt);
-	print_to_path("totalDamageTaken: " + totalDamageTaken);
+	print_to_path("<b>Score:</b>");
+	print_to_path("Total kills: " + totalKills + " | "  +
+		          "Total turns: " + totalTurns + " | " + 
+		          "Total damage dealt: " + totalDamageDealt + " | " +
+		          "Total damage taken: " + totalDamageTaken
+		          );
 }
