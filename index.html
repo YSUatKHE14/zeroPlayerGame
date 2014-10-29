@@ -4,20 +4,24 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
+
         <title>The Adventures Of Sevythien</title>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <meta name="description" content="The Adventures Of Sevythien, a zero player game made by the YSU team at Kent Hack Enough 2014">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+
+        <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+
     </head>
+
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -25,11 +29,12 @@
 
         <div class="pure-g">
             <div class="pure-u-2-24">
+            	<!--intentionally empty-->
             </div>
-
             <div class="pure-u-20-24 wrapper">
-            <h1>The Adventures Of Sevythien</h1>
-            <!-- Uses PURE css. Class names have predefined css for stack allign, ordering, etc.-->
+            	<h1>The Adventures Of Sevythien</h1>
+
+            	<!-- Uses PURE css. Class names have predefined css for stack allign, ordering, etc.-->
                 <div id="initialForm" class="initialForm">
                     <form class="pure-form pure-form-aligned heroNameForm" name="myForm">
                         <div class="pure-control-group">
@@ -60,7 +65,6 @@
                                 </select>
                             </div>
                         </div>
-
 
                         <!-- This should be a fresh commit to avoid any git demons from getting me -->
 						<!-- You mean "gitting you" hahahahahha I'm funny bro -->
@@ -114,24 +118,33 @@
                             </table>
                         </div>
 
-
                         <div class="pure-control-group">
                             <input type="button" class="pure-button pure-button-primary" value="Submit" onclick="return initialize_character();">
                         </div>
                     </form>
-                </div>
+                </div><!--End of initialForm-->
+
                 <div id="gameplay" class="gameplay">
                     <div id="status" class="status">Health:
                         <span id="status_health"> </span>
                     </div>
                     <div id="path" class="path">
+                    	<!--intentionally empty, the path dialogs dialogue-->
                     </div>
-                </div>
+                </div><!--End of gameplay-->
+
             </div>
-            <div class="pure-u-2-24"> ... </div>
+            <div class="pure-u-2-24">
+        		<!--intentionally empty-->
+            </div>
         </div>
+
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="js/pathFunctions.js"></script>
         <script src="js/main.js"></script>
 		<script src="js/inventoryItems.js"></script>
+
     </body>
+
 </html>
