@@ -59,10 +59,11 @@ function gameplay() {
 function play_again_button(){
 	var playAgainButton = document.createElement("input");
 	playAgainButton.type = "button";
-	playAgainButton.class = "pure-button pure-button-primary" 
+	playAgainButton.setAttribute("class", "pure-button pure-button-primary");
 	playAgainButton.value ="Replay";
-	playAgainButton.onclick = "reset_game();"
-	
+	playAgainButton.setAttribute("onClick", "reset_game();");
+	playAgainButton.style.display="none";
+	document.getElementById("path").appendChild(playAgainButton);
 }
 
 function reset_game(){ // functionalized so it can be changed later. If there is a better way.
@@ -70,7 +71,7 @@ function reset_game(){ // functionalized so it can be changed later. If there is
 }
 
 function showResults() {
-  $("div#path").children("p").each( function(index) {
+  $("div#path").children().each( function(index) { // the children() used to be passed "p" but it was a different time then
 	multiplier = Math.floor((Math.random() * 4) + 1);
     $(this).delay(400*index).fadeIn(300, function() {document.getElementById("path").scrollTop = document.getElementById("path").scrollHeight;});
   });
@@ -79,7 +80,7 @@ function showResults() {
 function run() {
   switch_to_gameplay();
   gameplay();
-  showResults();
   play_again_button();
+  showResults();
 }
 
