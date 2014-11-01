@@ -83,4 +83,19 @@ function run() {
   play_again_button();
   showResults();
 }
-
+function checkBoxLimit(){
+	var checkBoxes = document.querySelectorAll('.inventory:checked');
+	var uncheckedBoxes = document.querySelectorAll(".inventory:not(checked)");
+	if(checkBoxes.length > 2){
+		for(var i = 0; i < uncheckedBoxes.length; i++){
+			uncheckedBoxes[i].disabled = true;
+		}
+	} else {    // This is for Joe
+		for(var i = 0; i < uncheckedBoxes.length; i++){
+			uncheckedBoxes[i].disabled = false;
+		}
+	}
+	for(var i = 0; i < checkBoxes.length; i++){
+		checkBoxes[i].disabled = false;
+	}
+}
