@@ -77,6 +77,8 @@ function showResults() {
   });
 }
 
+$("#inventoryTableBody").on("tap",checkBoxLimit());
+
 function run() {
   switch_to_gameplay();
   gameplay();
